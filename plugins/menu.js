@@ -4,7 +4,7 @@ const { cmd, commands } = require("../command");
 cmd(
   {
     pattern: "menu",
-    alise: ["getmenu"],
+    alise: ["getmenu","m"],
     desc: "get cmd list",
     category: "main",
     filename: __filename,
@@ -59,7 +59,7 @@ cmd(
 
       let madeMenu = `👋 *Hello  ${pushname}*
 
-
+I am Alive.
 | *MAIN COMMANDS* |
     ▫️.alive
     ▫️.menu
@@ -84,15 +84,15 @@ ${menu.group}
 ${menu.search}
 
 
-🥶𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋🥶
+🥶𝐌𝐚𝐝𝐞 𝐛𝐲 Rusiru Tharusha.🥶
 
-> ROBIN MENU MSG
+> Test MENU MSG
 `;
       await robin.sendMessage(
         from,
         {
           image: {
-            url: "https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20menu.jpg",
+            url: "https://github.com/RusiruTharusha/Queen/blob/main/d0a654b5d62322aa430af70231660f91.jpg",
           },
           caption: madeMenu,
         },
